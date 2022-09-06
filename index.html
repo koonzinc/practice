@@ -55,6 +55,19 @@
             height: 70px;
             border: 1px solid gray;
             border-radius: 3px;
+            margin: auto;
+            background-image: radial-gradient(circle, green, red);
+            box-shadow: 4px 4px 30px gray;
+);
+        }
+        .intro::first-line {
+            background-color: green;
+        }
+        .intro::first-letter {
+            color: red;
+        }
+        #lorem {
+            text-shadow: 2px 2px 5px yellow, 3px 3px 10px;
         }
     </style>
     <h1 title="tooltip">hello</h1>
@@ -108,6 +121,7 @@
         </tr>
     </table>
     <div class="intro">
+        <p id="lorem" style="text-align:end; margin:auto;">
         Lorem ipsum, dolor sit amet consectetur <br>
         adipisicing elit. Reiciendis similique, <br>
         illum ad nihil molestias commodi magnam <br>
@@ -117,6 +131,7 @@
         praesentium tenetur cum, quidem, nihil <br>
         voluptatem vel quam fugit nesciunt! Ex eos <br>
         error blanditiis fuga suscipit iste facere!
+        </p>
     </div>
 
     <script>
