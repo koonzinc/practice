@@ -7,12 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .code {
+            outline-style: dotted;
+            outline-width: 3px;
+            outline-color: red;
+        }
+    </style>
     <h1 title="tooltip">Hello</h1>
     <p>
         <img id="img" src="https://as2.ftcdn.net/v2/jpg/02/45/79/47/1000_F_245794715_9oXG5WmafEh9AzKomxnOfcU3g7U2NnyM.jpg" alt="smile" width="400px" height="300px" style="float:right;">
         This is a paragraph
         welcome to it
-        <pre><code>
+        <pre class="code"><code>
         This is preformatted code
         welcome to it
         let <var>num</var> = 10;
@@ -28,6 +35,8 @@
     </ol>
     <form>
         <textarea name="" id="" cols="30" rows="5">Hello</textarea>
+        <input type="text" name="username" id="" placeholder="Username" maxlength="16">
+        <input type="password" name="username" id="" placeholder="Password" maxlength="16">
         <select name="car-selection" id="">
             <option value="/">Select a car</option>
             <option value="Volvo">Volvo</option>
