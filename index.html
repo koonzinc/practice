@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
         .code {
-            outline-style: dotted;
-            outline-width: 3px;
-            outline-color: red;
+            outline: 3px dotted red;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            font-variant: small-caps;
+            text-indent: 20px;
+            font-size: 20px;
+            /*visibility: hidden;*/
+            /*display: none;*/
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid green;
+        }
+        li {
+            /*display: inline;*/
+        }
+        code {
+            /*display: block;*/
         }
     </style>
-    <h1 title="tooltip">Hello</h1>
+    <h1 title="tooltip">hello</h1>
+    <h2>hello</h2>
     <p>
-        <img id="img" src="https://as2.ftcdn.net/v2/jpg/02/45/79/47/1000_F_245794715_9oXG5WmafEh9AzKomxnOfcU3g7U2NnyM.jpg" alt="smile" width="400px" height="300px" style="float:right;">
+        <img id="img"
+            src="https://as2.ftcdn.net/v2/jpg/02/45/79/47/1000_F_245794715_9oXG5WmafEh9AzKomxnOfcU3g7U2NnyM.jpg"
+            alt="smile" width="400px" height="300px" style="float:right;">
         This is a paragraph
         welcome to it
-        <pre class="code"><code>
+    <pre class="code"><code>
         This is preformatted code
         welcome to it
         let <var>num</var> = 10;
@@ -45,8 +77,26 @@
         </select>
         <input type="number" name="" id="" min="1" max="9">
     </form>
+
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
     <script>
         document.getElementById("img").src = "https://media.newyorker.com/photos/61d89a3b6e427eb16f59b190/master/w_2560%2Cc_limit/Shouts-Mulrooney-SmileReasons.jpg";
     </script>
 </body>
+
 </html>
